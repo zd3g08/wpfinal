@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+@media screen and (max-width: 599px){
+.none {display:none}
+}
 // 全体
 html{
     font-size: 62.5%;
@@ -53,8 +56,32 @@ header img {
 }
 
 img.title {
-    width: 50vw;
+    width: 40vw;
     position: absolute;
+    top: 40px;
+    left: 43.5px;
+    z-index: 150;
+}
+
+.dot_border { //横ボーダー
+    position: absolute;
+    left: 0;
+    top: 43.5px;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/dot.png') left top repeat-x;
+    opacity: .5;
+    z-index: 150;
+}
+
+.dot_border2 { //縦ボーダー
+    position: absolute;
+    left: 43.5px;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/dot.png') left top repeat-y;
+    opacity: .5;
     z-index: 150;
 }
 
@@ -110,5 +137,49 @@ img.title {
             border-bottom: 10px solid transparent;
             /* 透明 */
             z-index: 0;
+        }
+}
+
+div.nav_menu {
+    display: inline-block;      /* インラインブロック要素にする */
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 150;
+}
+
+div.menu {
+    display: inline-block;      /* インラインブロック要素にする */
+    width: 126px;
+    margin: 0 15px 0 0;
+    padding: 40px 0 15px 0;
+    background: rgba(0,0,0,.8);
+    text-align: center;
+}
+
+.menu span {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
+        div.nav_menu {
+            display: inline-block;      /* インラインブロック要素にする */
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 150;
+        }
+
+        div.menu {
+            display: inline-block;      /* インラインブロック要素にする */
+            width: 126px;
+            margin: 0 15px 0 0;
+            padding: 40px 0 15px 0;
+            background: rgba(0,0,0,.8);
+            text-align: center;
+        }
+
+        .menu span {
+            color: #ffffff;
         }
 }
