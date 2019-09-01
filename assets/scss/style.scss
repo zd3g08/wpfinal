@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:600,700&display=swap');
 @media screen and (max-width: 599px){
 .none {display:none}
 }
@@ -92,6 +93,44 @@ header img {
     overflow-x: hidden;
 }
 
+.tagline {
+display: block;
+position: absolute;
+top: 200px;
+right: 20px;
+font-family: 'Noto Serif JP', serif;
+font-size: 10rem;
+line-height: 18rem;
+z-index: 180;
+text-align: right;
+}
+@media screen and (max-width: 1099px) {/* 1100px未満（スマートフォン向け）*/
+        .tagline {
+        display: block;
+        position: absolute;
+        top: 150px;
+        right: 5px;
+        font-family: 'Noto Serif JP', serif;
+        font-size: 5rem;
+        line-height: 7rem;
+        z-index: 180;
+        text-align: right;
+        }
+}
+@media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
+        .tagline {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 5px;
+        font-family: 'Noto Serif JP', serif;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        z-index: 180;
+        text-align: right;
+        }
+}
+
 img.title {
     width: 40vw;
     position: absolute;
@@ -99,6 +138,7 @@ img.title {
     left: 43.5px;
     z-index: 150;
 }
+
 @media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
     img.title {
         width: 40vw;
@@ -393,7 +433,8 @@ table {
 }
 
 .kaisha {
-width: 90%;
+width: 75%;
+margin-left: 25px;
     }
 .kaisha th,
 .kaisha td {
@@ -403,17 +444,19 @@ padding: 17px;
 .kaisha th {
 font-weight: bold;
 background-color: #dedede;
+vertical-align: middle;
 }
 @media screen and (max-width: 599px) {
     .kaisha {
-    width: 100%;
+    width: 90%;
+    font-size: 1.25rem;
     }
     .kaisha,.kaisha tr,.kaisha td,.kaisha th {
     display:block;
     padding: 3px;
     }
     .kaisha td {
-        padding: 0 20px;
+        padding: 0 15px;
     }
     .kaisha th {
         width:auto;
@@ -457,10 +500,20 @@ span.red {
   color: #db143c;
 }
 
+.youtube iframe{
+    margin-top: 30px;
+  width: 100%;
+}
+
 span.sign {
     font-family: 'Mrs Saint Delafield', cursive;
     font-size: 5rem;
 }
+
+.lylics{
+    font-size: 1.4rem;
+}
+
 
 section.yohaku {
     width: 100vw;
