@@ -11,9 +11,12 @@ body {
     color: #111111;
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
+    padding: 0;
     font-size: 1.6rem;/* 16px*/
     line-height: 2;
+    overflow-x: hidden;
 }
+
 
 a {
     color: lightSeaGreen;
@@ -51,17 +54,15 @@ h2 {
     h2 {font-size: 2rem;/* 20px*/}
 }
 
-header {
-    overflow: hidden;/* はみ出た部分は表示しない */
-}
-
 header.container {
     width: 100vw;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 header img {
     width: 100vw;
+    overflow-x: hidden;
 }
 
 img.title {
@@ -70,6 +71,15 @@ img.title {
     top: 40px;
     left: 43.5px;
     z-index: 150;
+}
+@media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
+    img.title {
+        width: 40vw;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 150;
+    }
 }
 
 .dot_border { //横ボーダー
@@ -81,18 +91,50 @@ img.title {
     background: url('../images/dot.png') left top repeat-x;
     opacity: .5;
     z-index: 150;
+    overflow-x: hidden;
 }
 
 .dot_border2 { //縦ボーダー
     position: absolute;
     left: 43.5px;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 50vw;
+    height: 500vh;
     background: url('../images/dot.png') left top repeat-y;
     opacity: .5;
     z-index: 150;
+/*     margin-left: 43.5px;
+ */
+    overflow-x: hidden;
+    }
+
+@media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
+    .dot_border { //横ボーダー
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 100vw;
+        height: 100vh;
+        background: url('../images/dot.png') left top repeat-x;
+        opacity: .5;
+        z-index: 150;
+        overflow-x: hidden;
+    }
+
+    .dot_border2 { //縦ボーダー
+        position: absolute;
+        left: 20px;
+        width: 50vw;
+        height: 500vh;
+        background: url('../images/dot.png') left top repeat-y;
+        opacity: .5;
+        z-index: 150;
+    /*     margin-left: 43.5px;
+     */
+        overflow-x: hidden;
+        }
 }
+
+//ヘッダーの斜め区切り線
 
 .naname {
     width: 100vw;
@@ -214,3 +256,79 @@ div.menu:hover {
             color: #ffffff;
         }
 }
+
+
+section.container {
+    position: relative;
+    background-color: #fff;
+}
+h3 {
+    color: #db143c;
+    font-weight: 800;
+    font-size: 50px;
+    /* IE8以下とAndroid4.3以下用フォールバック */
+    font-size: calc(10rem + ((1vw - 0.64rem) * 0.7143));
+    /* 20px~24pxで可変*/
+    line-height: 1.3;
+    vertical-align: bottom;
+}
+
+@media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
+    h3 {font-size: 5rem;/* 20px*/}
+}
+
+section.aboutus {
+    position: relative;
+    top: 200px;
+    background-color: orange;
+        padding-left: 50px;
+}
+@media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
+    section.aboutus {
+        position: relative;
+        padding-left: 20px;
+        top: 50px;
+        background-color: #ffffff;
+    }
+}
+
+//斜め線ここから
+.svg_top {
+    position: absolute;
+    top: -210px;
+    width: 100vw;
+    height: 200px;
+    fill: #db143c;
+    z-index: 100;
+}
+
+.svg_bottom {
+    position: absolute;
+    top: -10px;
+    width: 100vw;
+    height: 200px;
+    fill: #db143c;
+    z-index: 100;
+}
+
+@media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
+    .svg_top {
+        position: absolute;
+        top: -60px;
+        width: 100vw;
+        height: 50px;
+        fill: #db143c;
+        z-index: 100;
+    }
+
+    .svg_bottom {
+        position: absolute;
+        top: -10px;
+        width: 100vw;
+        height: 50px;
+        fill: #db143c;
+        z-index: 100;
+    }
+}
+
+//斜め線ここまで
