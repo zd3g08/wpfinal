@@ -1,11 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield&display=swap');
 @media screen and (max-width: 599px){
 .none {display:none}
 }
 // 全体
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 body {
     color: #111111;
@@ -17,8 +19,33 @@ body {
     overflow-x: hidden;
 }
 
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 77%;
+    z-index: 200;
+    opacity: .7;
+}
+#page-top a {
+    background: #111;
+    text-decoration: none;
+    color: #fff;
+    width: 40px;
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    border-radius: 0px;
+    z-index: 200;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background: #111;
+    z-index: 200;
+}
 
 a {
+    position: relative;
     color: lightSeaGreen;
     transition: color .3s, text-decoration .3s;
 }
@@ -87,7 +114,7 @@ img.title {
     left: 0;
     top: 43.5px;
     width: 100vw;
-    height: 100vh;
+    height: 20vh;
     background: url('../images/dot.png') left top repeat-x;
     opacity: .5;
     z-index: 150;
@@ -97,7 +124,7 @@ img.title {
 .dot_border2 { //縦ボーダー
     position: absolute;
     left: 43.5px;
-    width: 50vw;
+    width: 10vw;
     height: 500vh;
     background: url('../images/dot.png') left top repeat-y;
     opacity: .5;
@@ -113,7 +140,7 @@ img.title {
         left: 0;
         top: 20px;
         width: 100vw;
-        height: 100vh;
+        height: 20vh;
         background: url('../images/dot.png') left top repeat-x;
         opacity: .5;
         z-index: 150;
@@ -123,8 +150,8 @@ img.title {
     .dot_border2 { //縦ボーダー
         position: absolute;
         left: 20px;
-        width: 50vw;
-        height: 500vh;
+        width: 20vw;
+        height: 400vh;
         background: url('../images/dot.png') left top repeat-y;
         opacity: .5;
         z-index: 150;
@@ -258,10 +285,11 @@ div.menu:hover {
 }
 
 
-section.container {
+section.naname-border {
     position: relative;
     background-color: #fff;
 }
+
 h3 {
     color: #db143c;
     font-weight: 800;
@@ -271,20 +299,45 @@ h3 {
     /* 20px~24pxで可変*/
     line-height: 1.3;
     vertical-align: bottom;
+    letter-spacing: .01rem;
 }
 
 @media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
     h3 {font-size: 5rem;/* 20px*/}
 }
 
-section.aboutus {
+.dot_red_border { //赤の横ボーダー
+    position: absolute;
+    left: 0;
+    top: 118px;
+    width: 100vw;
+    height: 10vh;
+    background: url('../images/dot-red.png') left top repeat-x;
+    opacity: .5;
+    z-index: 150;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
+    .dot_red_border { //赤の横ボーダー
+        position: absolute;
+        left: 0;
+        top: 54px;
+        width: 100vw;
+        background: url('../images/dot-red.png') left top repeat-x;
+        opacity: .5;
+        z-index: 150;
+        overflow-x: hidden;
+    }
+}
+
+section.midashi {
     position: relative;
     top: 200px;
-    background-color: orange;
+    background-color: #fff;
         padding-left: 50px;
 }
 @media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
-    section.aboutus {
+    section.midashi {
         position: relative;
         padding-left: 20px;
         top: 50px;
@@ -314,7 +367,7 @@ section.aboutus {
 @media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
     .svg_top {
         position: absolute;
-        top: -60px;
+        top: -59px;
         width: 100vw;
         height: 50px;
         fill: #db143c;
@@ -332,3 +385,110 @@ section.aboutus {
 }
 
 //斜め線ここまで
+
+//見出し記事ここから
+
+table {
+    margin: 40px 0 0 0;
+}
+
+.kaisha {
+width: 90%;
+    }
+.kaisha th,
+.kaisha td {
+border: 1px solid #ccc;
+padding: 17px;
+}
+.kaisha th {
+font-weight: bold;
+background-color: #dedede;
+}
+@media screen and (max-width: 599px) {
+    .kaisha {
+    width: 100%;
+    }
+    .kaisha,.kaisha tr,.kaisha td,.kaisha th {
+    display:block;
+    padding: 3px;
+    }
+    .kaisha td {
+        padding: 0 20px;
+    }
+    .kaisha th {
+        width:auto;
+        letter-spacing: 1.3rem;
+    }
+}
+
+article {
+  width: 75%;
+  padding: 50px 0 0 20px;
+  font-size: 1.4rem;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 599px) {
+    article {
+      width: 75%;
+      padding: 50px 0 0 20px;
+      font-size: 1.4rem;
+      text-align: justify;
+      text-justify: inter-ideograph;
+      margin-bottom: 10px;
+    }
+}
+
+article p {
+  padding-left: 1.5rem;
+}
+
+article p.text-left {
+  text-align: right;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+span.red {
+  color: #db143c;
+}
+
+span.sign {
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 5rem;
+}
+
+section.yohaku {
+    width: 100vw;
+    height: 500px;
+    background-color: #fff;
+}
+
+section.yohaku:last-of-type {
+        width: 100vw;
+        height: 250px;
+        background-color: #fff;
+    }
+
+@media screen and (max-width: 599px) {
+    section.yohaku {
+        width: 100vw;
+        height: 150px;
+        background-color: #fff;
+    }
+    section.yohaku:last-of-type {
+        width: 100vw;
+        height: 50px;
+        background-color: #fff;
+    }
+}
+
+footer {
+    font-size: 1.2rem;
+    color: #111111;
+    text-align: center;
+}
