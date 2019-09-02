@@ -165,7 +165,7 @@ img.title {
     position: absolute;
     left: 43.5px;
     width: 10vw;
-    height: 500vh;
+    height: 520vh;
     background: url('../images/dot.png') left top repeat-y;
     opacity: .5;
     z-index: 150;
@@ -190,8 +190,8 @@ img.title {
     .dot_border2 { //縦ボーダー
         position: absolute;
         left: 20px;
-        width: 20vw;
-        height: 400vh;
+        width: 10vw;
+        height: 510vh;
         background: url('../images/dot.png') left top repeat-y;
         opacity: .5;
         z-index: 150;
@@ -435,32 +435,51 @@ table {
 .kaisha {
 width: 75%;
 margin-left: 25px;
+border-spacing: 0;
     }
-.kaisha th,
-.kaisha td {
-border: 1px solid #ccc;
-padding: 17px;
-}
 .kaisha th {
-font-weight: bold;
-background-color: #dedede;
-vertical-align: middle;
+  width: 100px;
+  border-bottom: solid 2px #db143c;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+     -moz-text-align-last: justify;
+     text-align-last: justify;
+     text-justify:inter-ideograph;
+  padding: 0 18px;
 }
+
+.kaisha td {
+  padding: 10px 0 10px 30px;
+  border-bottom: solid 2px #e1e1e1;
+}
+
 @media screen and (max-width: 599px) {
     .kaisha {
-    width: 90%;
+    width: 100vw;
     font-size: 1.25rem;
+    text-align: center;
     }
     .kaisha,.kaisha tr,.kaisha td,.kaisha th {
     display:block;
-    padding: 3px;
+    padding: 0px;
     }
     .kaisha td {
-        padding: 0 15px;
+        padding: 5px 15px;
+  border-bottom: solid 2px #db143c;
     }
     .kaisha th {
         width:auto;
         letter-spacing: 1.3rem;
+  border-bottom: solid 1px #f9f9f9;
+  background-color: rgba(240,240,240,.8);
+     -moz-text-align-last: center;
+     text-align-last: center;
+     text-justify:inter-ideograph;
+
+    }
+    .first_th {
+        border-top: solid 2px #db143c;
     }
 }
 
@@ -544,4 +563,5 @@ footer {
     font-size: 1.2rem;
     color: #111111;
     text-align: center;
+    margin: 20px;
 }
