@@ -48,8 +48,9 @@
                     <span class="sign">Taro Yamada</span>
                 </p>
                 <div class="youtube">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/BUvW1R8seOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="lylics">「明日はきっといいぜ　未来はきっといいぜ　魂でいこうぜ」</p>
+                    <iframe width="853" height="480" src="//www.youtube.com/embed/BUvW1R8seOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="lylics">「明日はきっといいぜ　未来はきっといいぜ　魂でいこうぜ」
+                    </p>
                 </div>
             </article>
         </section>

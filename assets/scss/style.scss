@@ -565,3 +565,143 @@ footer {
     text-align: center;
     margin: 20px;
 }
+
+.content_center{
+    margin: 0 0 0 50px;
+}
+
+@media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
+    .content_center{
+        margin: 0;
+    }
+}
+
+/* Contact Form7 */
+
+.contact7 {
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.kojin {
+    width: 600px;
+    padding-left: 100px;
+}
+
+@media screen and (max-width: 599px) {/* 600px未満（スマートフォン向け）*/
+    .kojin {
+        width: 400px;
+        padding-left: 0px;
+        margin: 0;
+    }
+}
+
+
+.contact7 dd {
+    margin: 0 0 25px 0;
+
+}
+
+.contact7 dt:last-of-type {
+    margin: 0 0 15px 0;
+
+}
+.contact7 dt {
+    font-weight: normal;
+}
+
+/* 必須マーク */
+.contact7 .must {
+    background: #FF1A00;
+     -moz-text-align-last: center;
+     text-align-last: center;
+     text-justify:inter-ideograph;
+}
+
+/* 任意マーク */
+.contact7 .optional {
+    background: #999;
+     -moz-text-align-last: center;
+     text-align-last: center;
+     text-justify:inter-ideograph;
+}
+
+.contact7 .must,
+.contact7 .optional {
+    color: #FFF;
+    border-radius: 3px;
+    font-size: 10px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+}
+.btn_contact7 {
+    width: 150px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .btn_contact7 {
+        width: 200px;
+        text-align: center;
+    }
+}
+
+.btn_contact7 input {
+    width: 150px;
+    background-color: #db143c;
+    color: #FFF;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    border: 1px solid #db143c;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+    padding: 10px 0;
+    margin-top: 15px;
+}
+.btn_contact7 input:hover {
+    background-color: #FFF;
+    color: #db143c;
+
+}
+
+
+@media screen and (min-width: 768px) {
+.contact7 dt {
+    float: left;
+    clear: left;
+    width: 35%;
+    padding: 5px 10px 5px 0;
+     -moz-text-align-last: justify;
+     text-align-last: justify;
+     text-justify:inter-ideograph;
+    }
+
+.btn_contact7 {
+    width: 500px;
+    text-align: center;
+}
+
+.btn_contact7 input {
+    width: 200px;
+    background-color: #db143c;
+    color: #FFF;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    border: 1px solid #db143c;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+}
+.btn_contact7 input:hover {
+    background-color: #FFF;
+    color: #db143c;
+}
+}
