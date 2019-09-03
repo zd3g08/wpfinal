@@ -1,6 +1,6 @@
 <?php get_header(); ?>
         <section class="midashi">
-            <h3 id="aboutus">About Us</h3>アップロードテストアップロードテスト
+            <h3 id="aboutus">About Us</h3>
             <div class="dot_red_border"></div>
             <table class="kaisha">
                 <tr>
