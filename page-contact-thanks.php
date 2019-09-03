@@ -15,26 +15,28 @@
 <body>
 <p id="page-top"><a href="#wrap"><i class="fa fa-caret-up fa-2x" aria-hidden="true"></i><br>PAGE TOP</a></p>
     <div class="dot_border"></div>
-    <div class="dot_border2"></div>
+    <div class="dot_border3"></div>
     <header class="container">
         <div class="naname">
             <a href="<?php echo home_url(); ?>"><img class="title" src="<?php echo get_template_directory_uri(); ?>/images/sample-logo.png" alt="タイトルロゴ"></a>
         </div>
     </header>
+        <section class="yohaku-contact"></section>
     <main>
         <section class="midashi">
             <h3 id="contact">Contact</h3>
             <div class="dot_red_border"></div>
             <article>
                 <h4>お問い合わせフォームの投稿を受け付けました。</h4>
-                <div class="content_center">
+
 <?php
     // スラッグが ''の内容の固定ページの内容を出力します
     $page = get_page_by_path( 'contact-thanks' );
     if( isset( $page ) ) {
         echo apply_filters( 'the_content', $page->post_content );
     }
-    ?>                </div>
+    ?>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php echo home_url(); ?>">トップページに戻る</a>
             </article>
         </section>
         <section class="yohaku"></section>

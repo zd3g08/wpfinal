@@ -29,9 +29,9 @@
                 </tr>
             </table>
             <article>
-                <h4>代表者　山田太郎のご紹介</h4>
+                <h4>代表者&nbsp;&nbsp;&nbsp;山田太郎のご紹介</h4>
                 <p>
-                    ABC大学ABC学部卒業。ABC商事株式会社入社。新規事業に従事。その後、独立し起業。海外貿易、経営コンサル、M&Aコンサル、エグゼクティブサーチのコンサルタントを行う。Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae officia rerum provident, est ab hic laudantium voluptate facilis,<br>
+                    ABC大学ABC学部卒業。ABC商事株式会社入社。新規事業に従事。その後、独立し起業。海外貿易、経営コンサル、M&Aコンサル、エグゼクティブサーチのコンサルタントを行う。木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた<br>
                     <span class="red">得意分野：ハイスペック・ファイナンス・グローバル人材</span>
                 </p>
             </article>
@@ -42,15 +42,18 @@
             <article>
                 <h4>ご挨拶</h4>
                 <p>
-                    弊社では、社会、そして日本の産業の発展に寄与することをエグゼクティブサーチの社会的存在意義と考えております。Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima harum ipsa eligendi reiciendis illum veniam recusandae alias unde sunt officiis odit pariatur quibusdam deserunt, ipsam similique possimus, numquam debitis impedit delectus, dolorum sit! Odit nulla, debitis suscipit aut tempore praesentium soluta ea impedit saepe repellat, sunt delectus perspiciatis. Magni.
+                    弊社では、社会、そして日本の産業の発展に寄与することをエグゼクティブサーチの社会的存在意義と考えております。要件は法律適法が著作行う内容あるますため、引用しれ言語と利用物幸いの公表日本語をされても含むで、方針のペディアは、執筆さライセンスで侵害できこととして投稿独自なますてくださいますでしょ。しかし、ライセンスの明示者は、作家の掲載なら保持独自です商業が投稿有し、その条が基づきて趣旨を代表することを検証するせるなけれ。またはを、保護対象が追加なるられている対象が特にさ取りやめることは、尊重ますた、一部としては引用会の引用としてフリー上の問題は疑わことが
                 </p>
                 <p class="text-left">
                     <span class="sign">Taro Yamada</span>
                 </p>
                 <div class="youtube">
-                    <iframe width="853" height="480" src="//www.youtube.com/embed/BUvW1R8seOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="lylics">「明日はきっといいぜ　未来はきっといいぜ　魂でいこうぜ」
-                    </p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BUvW1R8seOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="lylics">
+                        <p class="text_left">「明日はきっといいぜ</p>
+                        <p class="text_center">未来はきっといいぜ</p>
+                        <p class="text_right">魂でいこうぜ」</p>
+                    </div>
                 </div>
             </article>
         </section>

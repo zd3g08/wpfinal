@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+
 <p id="page-top"><a href="#wrap"><i class="fa fa-caret-up fa-2x" aria-hidden="true"></i><br>PAGE TOP</a></p>
     <div class="dot_border"></div>
     <div class="dot_border2"></div>
@@ -22,6 +24,20 @@
             <a href="<?php echo home_url(); ?>"><img class="title" src="<?php echo get_template_directory_uri(); ?>/images/sample-logo.png" alt="タイトルロゴ"></a>
         </div>
         <img src="<?php echo get_template_directory_uri(); ?>/images/top-image.jpg" alt="トップイメージ">
+
+<nav class="sumaho_menu">
+<div class="muck-up">
+  <div class="top">
+  </div>
+  <div class="clearfix"></div>
+  <div class="filter-btn">
+    <a id="one" href="#"><i class="ion-ios-checkmark-outline"></i></a>
+    <a id="two" href="#"><i class="ion-ios-alarm-outline"></i></a>
+    <a id="three" href="#"><i class="ion-ios-heart-outline"></i></a>
+    <span class="toggle-btn ion-android-funnel"></span>
+  </div>
+</div>
+</nav>
         <div class="none">
             <div class="nav_menu1">
                 <a href="#aboutus">
