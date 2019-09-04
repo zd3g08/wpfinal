@@ -1,7 +1,15 @@
 <?php get_header(); ?>
-        <section class="midashi">
+        <section class="midashi" data-aos="fade-up" >
             <h3 id="aboutus">About Us</h3>
             <div class="dot_red_border"></div>
+            <article>
+                <h4>株式会社ABCについて</h4>
+                <p>当社はエグゼクティブクラスのヘッドハンティングを中心とした人財紹介会社としてXXXX年に設立されました。
+                   社長・役員、経営幹部などエグゼクティブ層を対象とした方々のキャリアコンサルティングを専門に行っています。
+                   また、人財のご紹介に留まらず、企業分析・事業戦略立案・アセスメント等のサービスも提供しております。
+                </p>
+                   <img src="<?php echo get_template_directory_uri(); ?>/images/aboutus-image.jpg">
+            </article>
             <table class="kaisha">
                 <tr>
                     <th class="first_th">称号</th>
@@ -36,11 +44,12 @@
                 </p>
             </article>
         </section>
-        <section class="midashi">
+        <section class="yohaku-contact"></section>
+        <section class="midashi" data-aos="fade-up">
             <h3 id="greeting">Greeting</h3>
             <div class="dot_red_border"></div>
             <article>
-                <h4>ご挨拶</h4>
+            <h4>ご挨拶</h4>
                 <p>
                     弊社では、社会、そして日本の産業の発展に寄与することをエグゼクティブサーチの社会的存在意義と考えております。要件は法律適法が著作行う内容あるますため、引用しれ言語と利用物幸いの公表日本語をされても含むで、方針のペディアは、執筆さライセンスで侵害できこととして投稿独自なますてくださいますでしょ。しかし、ライセンスの明示者は、作家の掲載なら保持独自です商業が投稿有し、その条が基づきて趣旨を代表することを検証するせるなけれ。またはを、保護対象が追加なるられている対象が特にさ取りやめることは、尊重ますた、一部としては引用会の引用としてフリー上の問題は疑わことが
                 </p>
@@ -66,13 +75,13 @@
                 <polygon points="100,0 0,100 0,0" />
             </svg>
         </section>
-        <section class="midashi">
+        <section class="midashi" data-aos="fade-up">
             <h3 id="contact">Contact</h3>
             <div class="dot_red_border"></div>
             <article>
                 <h4>お問い合わせフォーム</h4>
                 <div class="content_center">
-<?php echo do_shortcode( '[contact-form-7 id="5" title="コンタクトフォーム 1"]' ); ?>
+                <?php echo do_shortcode( '[contact-form-7 id="5" title="コンタクトフォーム 1"]' ); ?>
                 </div>
             </article>
         </section>

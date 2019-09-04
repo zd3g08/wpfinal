@@ -18,16 +18,15 @@
     <div class="dot_border3"></div>
     <header class="container">
         <div class="naname">
-            <a href="<?php echo home_url(); ?>"><img class="title" src="<?php echo get_template_directory_uri(); ?>/images/sample-logo.png" alt="タイトルロゴ"></a>
         </div>
     </header>
-        <section class="yohaku-contact"></section>
     <main>
         <section class="midashi">
             <h3 id="contact">Contact</h3>
             <div class="dot_red_border"></div>
-            <article>
                 <h4>お問い合わせフォームの投稿を受け付けました。</h4>
+ <img src="<?php echo get_template_directory_uri(); ?>/images/thanks-image.jpg">
+            <article>
 
 <?php
     // スラッグが ''の内容の固定ページの内容を出力します
@@ -36,8 +35,12 @@
         echo apply_filters( 'the_content', $page->post_content );
     }
     ?>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php echo home_url(); ?>">トップページに戻る</a>
             </article>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+        &nbsp;&nbsp;<a href="<?php echo home_url(); ?>">トップページに戻る</a>
+    </p>
         </section>
         <section class="yohaku"></section>
 <?php get_footer(); ?>

@@ -18,6 +18,7 @@
 </body>
 <script type="text/javascript" src="js/holder.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script>
 $(function() {
     var showFlag = false;
@@ -90,5 +91,8 @@ $('#three').click(function() {
 
   });
 });
+</script>
+<script>
+    AOS.init(); //AOSの実行に必要
 </script>
 </html>
