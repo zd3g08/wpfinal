@@ -8,7 +8,7 @@
                    社長・役員、経営幹部などエグゼクティブ層を対象とした方々のキャリアコンサルティングを専門に行っています。
                    また、人財のご紹介に留まらず、企業分析・事業戦略立案・アセスメント等のサービスも提供しております。
                 </p>
-                   <img src="<?php echo get_template_directory_uri(); ?>/images/aboutus-image.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/aboutus-image.jpg">
             </article>
             <table class="kaisha">
                 <tr>
@@ -17,7 +17,7 @@
                 </tr>
                 <tr>
                     <th>事業所</th>
-                    <td>〒100-0000&nbsp;&nbsp;&nbsp;東京都千代田区丸の内1-1-1<br>ABCビルディング1階&nbsp;&nbsp;&nbsp;<i class="fa fa-location-arrow" aria-hidden="true"></i><a href="#">弊社へのアクセス</a></td>
+                    <td>〒100-0000&nbsp;&nbsp;&nbsp;東京都千代田区丸の内1-1-1<br>ABCビルディング1階&nbsp;&nbsp;&nbsp;<i class="fa fa-location-arrow" aria-hidden="true"></i><a href="/wpfinal/access">弊社へのアクセス</a></td>
                 </tr>
                 <tr>
                     <th>事業内容</th>
